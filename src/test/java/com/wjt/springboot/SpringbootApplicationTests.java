@@ -21,6 +21,5 @@ public class SpringbootApplicationTests
         SpringbootUser user = new SpringbootUser();
         user.setName("王金涛");
         springbootUserMapper.insert(user);
-
     }
 }
