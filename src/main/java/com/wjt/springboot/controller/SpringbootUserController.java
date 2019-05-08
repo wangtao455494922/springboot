@@ -23,7 +23,7 @@ public class SpringbootUserController
 
     @RequestMapping(value = "/insertUser")
     public String insertUser(){
-        logger.debug("测试");
+        logger.debug("这是个非AOP拦截日志");
         SpringbootUser user = new SpringbootUser();
         user.setName("王金涛");
         springbootUserService.insert(user);
