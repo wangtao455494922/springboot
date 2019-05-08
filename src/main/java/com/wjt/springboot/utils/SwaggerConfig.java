@@ -29,8 +29,8 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("集成Swagger2构建RESTful APIs")
                 .description("集成Swagger2构建RESTful APIs")
-                .termsOfServiceUrl("http://www.xiangxueketang.cn/")
-                .contact(new Contact("enjoy","cn.xiangxueketang","enjoy@enjoy.cn"))
+                .termsOfServiceUrl("www.baidu.com")
+                .contact(new Contact("wjt","www.baidu.com","455494922@qq.com"))
                 .version("1.0.0")
                 .build();
     }

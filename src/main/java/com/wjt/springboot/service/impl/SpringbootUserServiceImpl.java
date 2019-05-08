@@ -24,6 +24,5 @@ public class SpringbootUserServiceImpl implements SpringbootUserService
     public void insert(SpringbootUser user)
     {
         springbootUserMapper.insert(user);
-        int i = 10/0;
     }
 }
