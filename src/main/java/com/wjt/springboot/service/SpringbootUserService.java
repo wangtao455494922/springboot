@@ -10,4 +10,6 @@ import com.wjt.springboot.model.SpringbootUser;
 public interface SpringbootUserService
 {
     void insert(SpringbootUser user);
+
+    void addUser();
 }

@@ -46,7 +46,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -93,11 +92,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+
         <!--Redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+        <!--atomikos实现多数据源分布式事务-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
