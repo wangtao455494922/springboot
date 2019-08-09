@@ -1,6 +1,5 @@
 package com.wjt.springboot.service.impl;
 
-import com.wjt.springboot.dao.SpringbootUserMapper;
 import com.wjt.springboot.dao.source1.SpringbootUserMapper1;
 import com.wjt.springboot.dao.source2.SpringbootUserMapper2;
 import com.wjt.springboot.model.SpringbootUser;
@@ -17,13 +16,11 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class SpringbootUserServiceImpl implements SpringbootUserService
 {
-    @Autowired
-    private SpringbootUserMapper springbootUserMapper;
 
     @Autowired
-    private SpringbootUserMapper1 pringbootUserMapper1;
+    private SpringbootUserMapper1 springbootUserMapper1;
     @Autowired
-    private SpringbootUserMapper2 pringbootUserMapper2;
+    private SpringbootUserMapper2 springbootUserMapper2;
 
 
 
@@ -31,19 +28,12 @@ public class SpringbootUserServiceImpl implements SpringbootUserService
     @Transactional
     public void insert(SpringbootUser user)
     {
-        springbootUserMapper.insert(user);
-    }
-
-    @Override
-    @Transactional
-    public void addUser()
-    {
         SpringbootUser user1 = new SpringbootUser();
         user1.setName("我是用户1");
-        pringbootUserMapper1.insert(user1);
+        springbootUserMapper1.insert(user1);
         int i =10/0;
         SpringbootUser user2 = new SpringbootUser();
         user2.setName("我是用户2");
-        pringbootUserMapper2.insert(user2);
+        springbootUserMapper2.insert(user2);
     }
 }

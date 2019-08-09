@@ -11,5 +11,4 @@ public interface SpringbootUserService
 {
     void insert(SpringbootUser user);
 
-    void addUser();
 }
